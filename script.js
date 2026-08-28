@@ -3,24 +3,26 @@
    ============================================================ */
 
 const babyData = {
-  name: "최이든",                    // 아기 이름
-  birthDate: "2026-08-01",          // 태어난 날짜 (YYYY-MM-DD)
-  birthTime: "오전 7시 32분",         // 태어난 시간
-  weight: "3.4kg",                  // 몸무게
+  name: "최윤슬",                    // 아기 이름
+  birthDate: "2026-04-02",          // 태어난 날짜 (YYYY-MM-DD)
+  birthTime: "오전 9시 21분",         // 태어난 시간
+  weight: "2.98kg",                  // 몸무게
   height: "51cm",                   // 키
   bloodType: "AB형",                 // 혈액형 (없으면 "" 로 비워두세요)
-  parents: "아빠 최OO · 엄마 강OO",    // 부모님 성함 (없으면 "" 로 비워두세요)
+  parents: "아빠 최종윤 · 엄마 강영은",    // 부모님 성함 (없으면 "" 로 비워두세요)
   photoEmoji: "🍼",                  // 프로필 자리에 보일 이모지 (실제 사진으로 바꿀 수 있어요)
 };
 
 /* 성장 기록: 사진이 준비되면 emoji 자리에 실제 이미지를 넣어보세요.
    예) thumb: '<img src="images/1개월.jpg" alt="1개월">' */
 const growthLog = [
-  { label: "태어난 날", date: "2026.08.01", emoji: "👶", bg: "linear-gradient(160deg,#ffd6e8,#ffe9f3)" },
-  { label: "첫 한달",   date: "2026.09.01", emoji: "🍼", bg: "linear-gradient(160deg,#cdf5e4,#e6fff5)" },
-  { label: "2개월",     date: "2026.10.01", emoji: "🧸", bg: "linear-gradient(160deg,#e3d4ff,#f2e9ff)" },
-  { label: "3개월",     date: "2026.11.01", emoji: "🌙", bg: "linear-gradient(160deg,#ffe3c2,#fff3e0)" },
-  { label: "백일",      date: "2026.11.09", emoji: "🎉", bg: "linear-gradient(160deg,#ffd6e8,#ffe9f3)" },
+  { label: "태어난 날", date: "2026.04.02", emoji: "👶", bg: "linear-gradient(160deg,#ffd6e8,#ffe9f3)" },
+  { label: "첫 한달",   date: "2026.05.02", emoji: "🍼", bg: "linear-gradient(160deg,#cdf5e4,#e6fff5)" },
+  { label: "50일",      date: "2026.05.21", emoji: "50", bg: "linear-gradient(160deg,#cdf5e4,#e6fff5)" },
+  { label: "2개월",     date: "2026.06.01", emoji: "🧸", bg: "linear-gradient(160deg,#e3d4ff,#f2e9ff)" },
+  { label: "3개월",     date: "2026.07.01", emoji: "🌙", bg: "linear-gradient(160deg,#ffe3c2,#fff3e0)" },
+  { label: "백일",      date: "2026.07.10", emoji: "🎉", bg: "linear-gradient(160deg,#ffd6e8,#ffe9f3)" },
+  { label: "첫 뒤집기",     date: "2027.02.01", emoji: "🌸", bg: "linear-gradient(160deg,#cdf5e4,#e6fff5)" },
   { label: "6개월",     date: "2027.02.01", emoji: "🌸", bg: "linear-gradient(160deg,#cdf5e4,#e6fff5)" },
 ];
 

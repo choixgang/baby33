@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e3d4ff"/>
+      <stop offset="1" stop-color="#f2e9ff"/>
+    </linearGradient>
+    <mask id="crescentMask">
+      <rect width="400" height="500" fill="white"/>
+      <circle cx="245" cy="215" r="72" fill="black"/>
+    </mask>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg3)"/>
+  <circle cx="200" cy="240" r="120" fill="#ffffff" opacity="0.3"/>
+  <circle cx="200" cy="230" r="90" fill="#ffffff" mask="url(#crescentMask)"/>
+  <g fill="#ffffff">
+    <circle cx="130" cy="140" r="6"/>
+    <circle cx="110" cy="190" r="4"/>
+    <circle cx="290" cy="360" r="5"/>
+    <circle cx="150" cy="360" r="4"/>
+  </g>
+</svg>

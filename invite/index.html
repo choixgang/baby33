@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>윤슬이의 첫 생일 초대장</title>
+<meta name="description" content="윤슬이의 첫 생일잔치에 초대합니다" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎂</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../style.css" />
+<link rel="stylesheet" href="invite.css" />
+</head>
+<body>
+
+<div class="floaters" aria-hidden="true">
+  <span class="floater heart" style="--x:8%; --delay:0s; --dur:14s; --size:28px;">♥</span>
+  <span class="floater bubble" style="--x:20%; --delay:3s; --dur:18s; --size:36px;"></span>
+  <span class="floater heart" style="--x:35%; --delay:6s; --dur:16s; --size:20px;">♥</span>
+  <span class="floater bubble" style="--x:52%; --delay:1s; --dur:20s; --size:24px;"></span>
+  <span class="floater heart" style="--x:68%; --delay:8s; --dur:15s; --size:32px;">♥</span>
+  <span class="floater bubble" style="--x:80%; --delay:4s; --dur:19s; --size:44px;"></span>
+  <span class="floater heart" style="--x:90%; --delay:10s; --dur:17s; --size:22px;">♥</span>
+  <span class="floater bubble" style="--x:60%; --delay:12s; --dur:22s; --size:16px;"></span>
+</div>
+
+<header class="hero">
+  <p class="eyebrow">You're Invited</p>
+  <h1 id="inviteName" class="hero-name">윤슬이의 첫 생일</h1>
+  <p class="hero-sub" id="inviteSub">2027년 3월 27일 토요일, 오전 11시</p>
+  <div class="dday-badge" id="partyDdayBadge">D-0</div>
+</header>
+
+<main>
+  <section class="card message-card" id="message">
+    <div class="profile-photo" aria-hidden="true">🎂</div>
+    <p class="invite-message" id="inviteMessage"></p>
+  </section>
+
+  <section class="card photo-card" id="photos">
+    <h2 class="section-title">우리의 순간들</h2>
+    <p class="section-sub">윤슬이의 사랑스러운 모습을 담았어요</p>
+    <div class="photo-featured" id="photoFeatured">
+      <!-- JS로 채워집니다 -->
+    </div>
+    <div class="photo-strip" id="photoStrip">
+      <!-- JS로 채워집니다 -->
+    </div>
+  </section>
+
+  <section class="card details-card" id="details">
+    <h2 class="section-title">오시는 날</h2>
+    <dl class="profile-grid">
+      <div>
+        <dt>날짜 · 시간</dt>
+        <dd id="detailDateTime"></dd>
+      </div>
+      <div>
+        <dt>장소</dt>
+        <dd id="detailVenue"></dd>
+      </div>
+    </dl>
+    <p class="detail-address" id="detailAddress"></p>
+    <a class="map-button" id="mapLink" href="#" target="_blank" rel="noopener">지도로 보기</a>
+  </section>
+
+  <p class="back-link"><a href="../">← 윤슬이의 성장 기록 보러가기</a></p>
+</main>
+
+<footer class="site-footer">
+  <p>made with mommy & daddy's <span class="footer-heart">♥</span> for <span id="footerName">윤슬이</span>의 첫 생일</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="invite.js"></script>
+</body>
+</html>

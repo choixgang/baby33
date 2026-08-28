@@ -1,0 +1,131 @@
+/* invite 페이지 전용 스타일 (기본 톤/카드/타이포는 ../style.css 공용) */
+
+.message-card {
+  text-align: center;
+}
+
+.invite-message {
+  margin: 8px 0 0;
+  line-height: 1.9;
+  font-size: 1.02rem;
+  color: var(--ink);
+  white-space: pre-line;
+}
+
+.details-card .profile-grid {
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.detail-address {
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  margin: 14px 0 20px;
+}
+
+.map-button {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 12px 28px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ffc9de, #d9c6ff);
+  color: #6b4258;
+  font-family: "Jua", sans-serif;
+  font-size: 0.95rem;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
+}
+
+.map-button:hover {
+  transform: translateY(-2px);
+}
+
+.back-link {
+  text-align: center;
+  margin: 4px 0 0;
+}
+
+.back-link a {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.back-link a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- photo section ---------- */
+.photo-card {
+  text-align: center;
+}
+
+.photo-featured {
+  aspect-ratio: 4 / 5;
+  border-radius: 20px;
+  background: var(--photo-bg, linear-gradient(160deg, #ffe3ee, #f4ecff));
+  border: 1.5px dashed rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  margin-top: 20px;
+  transition: background 0.25s ease;
+}
+
+.photo-featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-strip {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 4px 2px 8px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+}
+
+.photo-thumb {
+  flex: 0 0 auto;
+  width: 62px;
+  height: 62px;
+  border-radius: 12px;
+  background: var(--photo-bg, linear-gradient(160deg, #ffe3ee, #f4ecff));
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  overflow: hidden;
+  cursor: pointer;
+  scroll-snap-align: start;
+  padding: 0;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.photo-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-thumb.active {
+  border-color: #e78ba8;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 420px) {
+  .photo-thumb {
+    width: 54px;
+    height: 54px;
+  }
+}
